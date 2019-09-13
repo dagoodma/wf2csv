@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require 'statement'
+require_relative 'statement'
 
 Dir.glob("statements/*.pdf").each do |pdf|
   st=Statement.new pdf

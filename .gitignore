@@ -1,0 +1,5 @@
+# Do not track the following files
+.*.swp
+.*.swo
+cc_statements_converted/
+statements/
