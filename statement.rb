@@ -44,6 +44,8 @@ class Statement
     #puts @content.class
     #puts /Previous/.match(@content)
     #puts /#{DATE_YEAR}\s*to\s*#{DATE_YEAR}/.match(@content)[2]
+    #@statement_end_date||=/#{DATE_YEAR}\s*to\s*#{DATE_YEAR}/.match(@content)[3]
+    #puts /#{DATE_YEAR}\s*to\s*#{DATE_YEAR}/.match(@content)
     @statement_end_date||=/#{DATE_YEAR}\s*to\s*#{DATE_YEAR}/.match(@content)[3]
     #@statement_end_date||=find_value(/#{DATE_YEAR}\s*to\s*#{DATE_YEAR}/)[1]
   end

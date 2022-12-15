@@ -19,6 +19,8 @@ i = 0
 j = 0
 qif_file = "statements/output.qif"
 
+raise ArgumentError, "Now using python tool: csv2ofx... see wellsfargo_cc.py mapping, and use command: for f in *.csv; do csv2ofx --mapping wellsfargo_cc \"$f\" \"${f%.csv}.ofx\"; done"
+
 Qif::Writer.open(qif_file, type = 'CCard', format = 'dd/mm/yyyy') do |qif|
   ARGV.each do |a|
     csv_file = a
